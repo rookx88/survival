@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://df6h1bsf4au6w"]
+
+[ext_resource type="Script" uid="uid://bu72me168rsyj" path="res://minor_spice.gd" id="1_mwjta"]
+[ext_resource type="Texture2D" uid="uid://b8sphhovmum08" path="res://assets/sprites/environment/Resources/MinorSpiceRock.png" id="2_l4dj3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c54ut"]
+radius = 23.0
+height = 72.0
+
+[node name="MinorSpice" type="Area2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_mwjta")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_l4dj3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_c54ut")
