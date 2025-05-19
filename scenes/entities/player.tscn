@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://d08guuubbmb8s"]
+
+[ext_resource type="Script" uid="uid://hrr3lie6i1mp" path="res://scenes/entities/player.gd" id="1_ucweq"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_ucweq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="ToolSystem" type="Node" parent="."]
+
+[node name="ResourceManager" type="Node" parent="."]
+
+[node name="WaterSystem" type="Node" parent="ResourceManager"]
+
+[node name="HealthSystem" type="Node" parent="ResourceManager"]

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://duuacekwbtdyn"]
+
+[node name="GameUI" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HealthBar" type="Node" parent="."]
+
+[node name="WaterBar" type="Node" parent="."]
